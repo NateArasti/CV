@@ -458,6 +458,27 @@ body.light .ctrl-btn.primary {
   box-shadow: 0 4px 24px rgba(10, 158, 110, 0.2);
 }
 
+@media (max-width: 680px) {
+  .cv {
+    grid-template-columns: 1fr;
+    min-height: unset;
+    border: none;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 24px 16px;
+  }
+
+  .photo-wrap { margin-bottom: 4px; }
+
+  .main { padding: 24px 16px; gap: 22px; }
+
+  .controls { bottom: 12px; right: 12px; gap: 6px; }
+  .ctrl-btn  { padding: 7px 10px; font-size: 10.5px; gap: 5px; }
+}
+
 /* ── Print styles ──────────────────────────────── */
 @media print {
   @page {
